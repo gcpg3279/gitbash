@@ -1,0 +1,52 @@
+#! /bin/bash
+apt update
+apt install apache2 -y
+systemctl eneable apache2
+mkdir -p /var/www/html/per /var/www/html/agri /var/www/html/mani
+echo "</h1> HI I AM per</h1>" >/var/www/html/per/index.html
+echo "</h1> HI I AM agri</h1>" >/var/www/html/agri/index.html
+echo "</h1> HI I AM mani</h1>" >/var/www/html/mani/index.html
+
+
+
+
+
+
+?#! /bin/bash
+   sudo apt update
+   sudo apt install -y apache2 wget
+   sudo systemctl enable apache2
+   sudo mkdir -p /var/www/html/images
+   sudo wget -O /var/www/html/images/image1.jpg https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg
+   sudo wget -O /var/www/html/images/image2.jpg https://render.fineartamerica.com/images/rendered/…/images-medium-5/awesome-solitude-bess-hamiti.jpg
+   sudo wget -O /var/www/html/images/image3.jpg https://public.fotospeed.com/media/magefan_blog/Mali_thumb.jpg
+   sudo bash -c 'cat > /var/www/html/index.html <<EOF
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title>Welcome to My World..!</title>
+   </head>
+   <body>
+       <h1>Hi..! Everyone!</h1>
+       <p>This is a simple page by Vijay.</p>
+       <h2>Image Gallery</h2>
+       <div>
+           <img src="images/image1.jpg"
+                alt="Tree" style="width:200px;"/>
+           <img src="images/image2.jpg
+               alt="Awesome Solitude" style="width:200px;"/>
+           <img src="images/image3.jpg"                                                    alt="Mali" style="width:200px;"/>
+       </div>
+   </body>
+   </html>
+   EOF'
+
+
+
+
+
+
+#! /bin/bash
+apt update
+apt install apache2 -y
+echo "<h1><center>hi i am mani<center></h1>" >/var/www/html/index.html
